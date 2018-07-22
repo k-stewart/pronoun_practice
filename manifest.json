@@ -1,0 +1,21 @@
+{
+ "author": "ignitiant@gmail.com",
+  "manifest_version": 2,
+  "name": "Pronoun Practice",
+  "version": "1.0",
+
+  "description": "Practice using unfamiliar pronoun sets by replacing text across the internet.",
+
+  "icons": {
+    "128": "icons/pronoun_practice.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.wikipedia.org/*"],
+      "js": ["PronounPractice.js"]
+    }
+  ]
+
+}
+
